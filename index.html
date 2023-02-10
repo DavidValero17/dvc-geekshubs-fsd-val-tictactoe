@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/inicio.css">    
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <div class="containerMaster">
-        <div class="titulo">
-            <h1>TIC TAC TOE</h1>
+        <div class="row">
+            <div class="titulo col-lg-12 d-flex justify-content-center align-items-center"><h1>FINAL TIC TAC TOE</h1></div>            
+        </div>
+        <div class="row titulo">
+                <div class="player1 col-6 col-lg-6 d-flex justify-content-center align-items-center"><h3>Inserta nombre Player 1</h3></div>
+                <div class="player2 col-6 col-lg-6 d-flex justify-content-center align-items-center"><h3>Inserta nombre Player 2</h3></div>            
         </div>
 
-        <div class="nombres">
-            <div class="p1"><h3>Inserte nombre Player 1</h3><input type="text"></div>        
-        
-            <div class="p2"><h3>Inserte nombre Player 2</h3><input type="text">
+        <div class="row">
+            <div class="col-6 col-lg-6 d-flex justify-content-center align-items-center"><input type="text"></div>
+            <div class="col-6 col-lg-6 d-flex justify-content-center align-items-center"><input type="text"></div>
+        </div>
+
+        <div class="row boton">
+            <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                <a href="./pages/juego.html"><button>Pulsa para jugar</button></a>
             </div>
         </div>
-
-        <div class="botonJuego">
-            <button>Pulse para empezar</button>
-        </div>
-
     </div>
 
 

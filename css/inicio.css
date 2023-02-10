@@ -1,24 +1,11 @@
 body {
-
-    background-color: aquamarine;
+    background-color: lightgray;
 }
 
 .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 25vh;
 }
 
-.nombres {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, auto);
-    gap: 20em;
-}
-
-.botonJuego {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.boton{
+    height: 25vh;
 }
