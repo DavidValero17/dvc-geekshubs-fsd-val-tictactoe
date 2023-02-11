@@ -1,51 +1,33 @@
 
-let tablero = Array.from(document.getElementsByClassName("cellDesign"));
+let datosJugadores = {
+    player1: "",
+    player2: "",
+}
 
-let turno = true;
+//TODO
+//Recoger el valor del input.
+//Y guardarlo en session storage.
 
-let fichaP1 = 3;
-let fichaP2 = 3;
+let inputs = Array.from(document.querySelectorAll("input"));
 
-let miTablero = ["","","","","","","","",""];
+let boton = document.querySelector("button");
 
-let combinacionGanadora = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6],
-  ];
+const cambiaNombres = (event) => {
 
-const comprueboGanador = () => {
-    console.log(miTablero);
+    const input = event.target;
+    const name = input.name;
+    const value = input.value;
+    datosJugadores[name] = value;
+    console.log(value)
 
 }
 
-tablero.map(
-    (celda) => {
-        celda.addEventListener('click', ()=> {
 
-            //Ejemplo de como añadir una clase a un elemento seleccionado
-            // celda.classList.add('cellDesign2');
+inputs.map((input) => input.addEventListener('input', cambiaNombres))
 
-            //Ejemplo de inyección de HTML desde JavaScript
-            // celda.innerHTML = `<p class='devil'>NUNCA LO ACABARAS</p>`;
+boton.addEventListener('click', (event) => {
 
-            if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
-                celda.innerHTML = (turno) ? "X" : "O";
+    console.log(event)
 
-                (turno) ? fichaP1-- : fichaP2--;
-
-                miTablero[celda.id] = (turno) ? "X" : "O";
-
-                comprueboGanador();
-
-                //Cambiamos de turno
-                turno = !turno;
-            }
-        })
-    }
-)
+    sessionStorage.setItem("jugadores", JSON.stringify(datosJugadores));    
+})
