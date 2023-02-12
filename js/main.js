@@ -1,12 +1,14 @@
+//TODO
+//Recoger el valor del input.
+//Y guardarlo en session storage.
+
 
 let datosJugadores = {
     player1: "",
     player2: "",
 }
 
-//TODO
-//Recoger el valor del input.
-//Y guardarlo en session storage.
+
 
 let inputs = Array.from(document.querySelectorAll("input"));
 
