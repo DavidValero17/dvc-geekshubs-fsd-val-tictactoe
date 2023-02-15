@@ -1,14 +1,11 @@
-//TODO
+//TO DO
 //Recoger el valor del input.
 //Y guardarlo en session storage.
-
 
 let datosJugadores = {
     player1: "",
     player2: "",
 }
-
-
 
 let inputs = Array.from(document.querySelectorAll("input"));
 
@@ -20,7 +17,6 @@ const cambiaNombres = (event) => {
     const name = input.name;
     const value = input.value;
     datosJugadores[name] = value;
-    console.log(value)
 
 }
 
