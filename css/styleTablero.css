@@ -12,12 +12,17 @@
 }
 
 .celdas {
+    display: grid;
     border: solid 1px black;
     cursor: pointer;
     transition: 0.2s;
     margin: 0.45em;
     background-color: blue;
     border-radius: 6%;
+    color: white;
+    text-align: center;
+    place-items: center;
+    font-size: xx-large;
 }
 
 .celdas:hover{

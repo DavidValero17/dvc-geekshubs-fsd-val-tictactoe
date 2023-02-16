@@ -19,7 +19,7 @@ document.getElementById("player-two-name").innerHTML = nombresJugadores.player2;
 //Vamos a empezar con el temporizador de turnos:
 
 let temporizador = false;
-let timer = 60;
+let timer = 10;
 let muestraTimer = document.getElementById("contador");
 let finTimer = null;
 
@@ -43,11 +43,7 @@ if(temporizador == false){
 }
 
 
-
-
-
-
-/* EJEMPLO DEL PROFESOR
+//EJEMPLO DEL PROFESOR
 
 let tablero = Array.from(document.getElementsByClassName("celdas"));
 
@@ -67,29 +63,18 @@ let combinacionGanadora = [
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6],
-  ];
+];
 
-const comprueboGanador = () => {
-    console.log(miTablero);
 
-}
-
-tablero.map(
-    (celda) => {
+tablero.map((celda) => {
         celda.addEventListener('click', ()=> {
-
-            //Ejemplo de como añadir una clase a un elemento seleccionado
-            // celda.classList.add('cellDesign2');
-
-            //Ejemplo de inyección de HTML desde JavaScript
-            // celda.innerHTML = `<p class='devil'>NUNCA LO ACABARAS</p>`;
 
             if((celda.innerHTML === "") && (fichaP1 > 0 || fichaP2 > 0)){
                 celda.innerHTML = (turno) ? "X" : "O";
 
                 (turno) ? fichaP1-- : fichaP2--;
 
-                miTablero[celda.id] = (turno) ? "X" : "O";
+                miTablero[celda.id-1] = (turno) ? "X" : "O";
 
                 comprueboGanador();
 
@@ -100,4 +85,34 @@ tablero.map(
     }
 )
 
-*/
+
+//Comprueba ganador by Adrian 
+
+const comprueboGanador = () => {
+    //Iterate board to check players clicked cells. we use reduce method to retrieve new array of clicked positions
+  
+    //X cells
+    const checkX = []
+    miTablero.map((value, i) => {
+        if(value === "X") checkX.push(i);
+    });
+    
+    const checkO = []
+    miTablero.map((value, i) => {
+        if(value === "O") checkO.push(i);
+    });
+    
+    //Iterating 'combinacionGanadora' to check player's board
+    combinacionGanadora.map((combinacion) => {
+      console.log(combinacion.toString(),checkO,checkX);
+      if(checkX.toString() === combinacion.toString()){
+        console.log("has ganado")
+      }
+      if(checkO.toString() === combinacion.toString()){
+        console.log("has ganado")
+      }
+      //console.log(miTablero.indexOf("O"));
+      //console.log(combinacion === miTablero.indexOf("O"));
+    });
+  };
+    
