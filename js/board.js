@@ -89,8 +89,7 @@ tablero.map((celda) => {
 //Comprueba ganador by Adrian 
 
 const comprueboGanador = () => {
-    //Iterate board to check players clicked cells. we use reduce method to retrieve new array of clicked positions
-  
+
     //X cells
     const checkX = []
     miTablero.map((value, i) => {
@@ -104,15 +103,15 @@ const comprueboGanador = () => {
     
     //Iterating 'combinacionGanadora' to check player's board
     combinacionGanadora.map((combinacion) => {
-      console.log(combinacion.toString(),checkO,checkX);
-      if(checkX.toString() === combinacion.toString()){
-        console.log("has ganado")
-      }
-      if(checkO.toString() === combinacion.toString()){
-        console.log("has ganado")
-      }
-      //console.log(miTablero.indexOf("O"));
-      //console.log(combinacion === miTablero.indexOf("O"));
+        console.log(combinacion.toString(),checkO,checkX);
+            if(checkX.toString() === combinacion.toString()){
+            console.log("has ganado");
+        }
+            if(checkO.toString() === combinacion.toString()){
+            console.log("has ganado");
+        }   if(checkO.toString() !== combinacion.toString() && fichaP1 === 0 && fichaP2 === 0 && checkX.toString() !== combinacion.toString()){
+            console.log("Empatasteis");
+        }
     });
-  };
+};
     
