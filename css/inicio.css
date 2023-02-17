@@ -1,5 +1,12 @@
+@font-face {
+    font-family: FinalFantasy;
+    src: url(../assets/finalf.ttf)
+}
+
 body {
     background-color: lightgray;
+    font-family: FinalFantasy;
+
 }
 
 .titulo {

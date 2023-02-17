@@ -1,4 +1,16 @@
+@font-face {
+    font-family: FinalFantasy;
+    src: url(../assets/finalf.ttf)
+}
 
+body {
+    font-family: FinalFantasy;
+    background-image: url(../assets/background.jpg);
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 
 .Tablero{
     display: grid;
