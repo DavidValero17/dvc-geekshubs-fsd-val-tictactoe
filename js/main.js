@@ -1,5 +1,3 @@
-
-
 let datosJugadores = {
     player1: "",
     player2: "",

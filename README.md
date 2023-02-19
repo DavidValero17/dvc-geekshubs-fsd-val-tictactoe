@@ -91,6 +91,6 @@ Para finalizar realizamos las funciones para comprobar las "X", las "O", guardar
 
 ## Agradecimientos
 
-Me gustaría agradecer a todos mis compañeros los cuales me estan ayudando siempre al igual que los docentes y no puedo olvidarme de mi buen amigo Adrian quien siempre esta dispuesto a echarme una mano sea cuando sea.
+Me gustaría agradecer a todos mis compañeros los cuales me estan ayudando siempre, al igual que los docentes y no puedo olvidarme de mi buen amigo Adrian quien siempre esta dispuesto a echarme una mano sea cuando sea.
 
 ---

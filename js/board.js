@@ -1,20 +1,9 @@
-//TO DO
-/**
- * Recuperar session storage: check!
- * Mostrar nombre de los jugadores en pantalla: check!
- * Realizar Contador:
- * Que pierda un turno si no mueve ficha en 20 segundos:
- * Logica del tablero:
- */
-
 //Recuperamos los datos del session storage.
 const nombresJugadores = JSON.parse(sessionStorage.getItem("jugadores"));
 
 //Sobreescribimos el HTML.
 document.getElementById("player-one-name").innerHTML = nombresJugadores.player1;
 document.getElementById("player-two-name").innerHTML = nombresJugadores.player2;
-
-
 
 //Vamos a empezar con el temporizador de turnos:
 
@@ -39,7 +28,7 @@ if (temporizador == false) {
   temporizador = true;
 }
 
-//Aqui comienza la lógica del tablero
+//Aqui comienza el tablero
 
 let tablero = Array.from(document.getElementsByClassName("celdas"));
 
