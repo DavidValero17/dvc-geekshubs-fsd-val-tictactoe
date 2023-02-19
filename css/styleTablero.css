@@ -6,10 +6,10 @@
 body {
     font-family: FinalFantasy;
     background-color: black;
-    /* background-image: url(../assets/background.jpg);
-    background-position: 35px -200px;
+    background-image: url(../assets/Logo.png);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
+    background-size: 70%;
     overflow: hidden;
 }
 
