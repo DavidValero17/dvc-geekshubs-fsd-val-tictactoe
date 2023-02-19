@@ -1,6 +1,4 @@
-//TO DO
-//Recoger el valor del input.
-//Y guardarlo en session storage.
+
 
 let datosJugadores = {
     player1: "",
@@ -24,8 +22,6 @@ const cambiaNombres = (event) => {
 inputs.map((input) => input.addEventListener('input', cambiaNombres))
 
 boton.addEventListener('click', (event) => {
-
-    console.log(event)
 
     sessionStorage.setItem("jugadores", JSON.stringify(datosJugadores));    
 })
