@@ -30,7 +30,6 @@ const cuentaTiempo = () => {
     if (timer == 0) {
       clearInterval(finTimer);
       mostrarResultado('Se os acabó el tiempo');
-      //AÑADIR UN FIN DEL JUEGO POR TIMEOUT
     }
   }, 1000);
 };
@@ -73,7 +72,7 @@ tablero.map((celda) => {
 
       comprueboGanador();
 
-      //Change turno
+      //Para cambiar el turno
       turno = !turno;
     }
   });
@@ -97,15 +96,10 @@ const comprueboGanador = () => {
     if (value === "O") checkO.push(i);
   });
 
-
-
   let resultado = "Habeis quedado empate";
   
-
-
   //Aqui empieza la combinacion ganadora
   combinacionGanadora.map((combinacion) => {
-    console.log(combinacion.toString(), checkO, checkX);
     if (checkX.toString() === combinacion.toString()) {
       resultado = nombresJugadores.player1;
       mostrarResultado(`Ha ganado ${nombresJugadores.player1}`);
