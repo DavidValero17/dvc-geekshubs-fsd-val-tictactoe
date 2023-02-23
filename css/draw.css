@@ -13,36 +13,6 @@ body {
     overflow: hidden;
 }
 
-.Tablero{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: white;
-    height: 60vh;
-    width: 60vh;
-    border: solid 2px black;
-    border-radius: 2%;
-}
-
-.celdas {
-    display: grid;
-    border: solid 1px black;
-    cursor: pointer;
-    transition: 0.2s;
-    margin: 0.35em;
-    background-color: blue;
-    border-radius: 6%;
-    color: white;
-    text-align: center;
-    place-items: center;
-    font-size: xx-large;
-}
-
-.celdas:hover{
-    scale: 1.1;
-    transition: 0,2s;
-}
-
 h3 {
     display: flex;
     align-items: center;
@@ -54,10 +24,12 @@ h3 {
     color: white;
     border: solid 7px white;
     border-radius: 10px;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
-
 
 a{
     color: white;

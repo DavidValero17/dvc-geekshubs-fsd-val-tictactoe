@@ -18,7 +18,7 @@ const cuentaTiempo = () => {
     muestraTimer.innerHTML = timer;
     if (timer == 0) {
       clearInterval(finTimer);
-      mostrarResultado('Se os acabó el tiempo');
+      window.location.href="../pages/vistadraw.html";
     }
   }, 1000);
 };
@@ -91,15 +91,17 @@ const comprueboGanador = () => {
   combinacionGanadora.map((combinacion) => {
     if (checkX.toString() === combinacion.toString()) {
       resultado = nombresJugadores.player1;
-      mostrarResultado(`Ha ganado ${nombresJugadores.player1}`);
+      window.location.href="../pages/vistawin1.html";
+      // mostrarResultado(`Ha ganado ${nombresJugadores.player1}`);
     }
     if (checkO.toString() === combinacion.toString()) {
       resultado = nombresJugadores.player2;
-      mostrarResultado(`Ha ganado ${nombresJugadores.player2}`);
+      window.location.href="../pages/vistawin2.html";
+      // mostrarResultado(`Ha ganado ${nombresJugadores.player2}`);
     }
   });
   if (fichaP1 === 0 && fichaP2 === 0 && resultado === "Habeis quedado empate") {
-    mostrarResultado(resultado)
+    window.location.href="../pages/vistadraw.html";
   }
 };
 
