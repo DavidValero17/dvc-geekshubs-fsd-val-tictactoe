@@ -15,7 +15,7 @@ body {
 }
 
 .titulo {
-    height: 25vh;
+    height: 35vh;
 }
 
 .boton{
@@ -68,4 +68,9 @@ button{
 a{
     color: white;
     text-decoration: none;
+}
+
+.boton {
+
+    width: 90vw;
 }
