@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-size: 70%;
     overflow: hidden;
+    margin: auto;
 }
 
 h3 {
@@ -24,11 +25,9 @@ h3 {
     color: white;
     border: solid 7px white;
     border-radius: 10px;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bolder;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
 }
 
 a{

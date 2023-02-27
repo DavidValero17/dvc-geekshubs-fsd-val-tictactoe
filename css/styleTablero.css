@@ -11,6 +11,8 @@ body {
     background-size: cover;
     background-size: 70%;
     overflow: hidden;
+    /* margin: none;
+    padding: none; */
 }
 
 .Tablero{
@@ -22,6 +24,7 @@ body {
     width: 60vh;
     border: solid 2px black;
     border-radius: 2%;
+
 }
 
 .celdas {
@@ -47,15 +50,16 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5vh;
+    margin: 2vh;
     height: 15vh;
     width: 50vh;
     background-color: blue;
     color: white;
-    border: solid 7px white;
+    border: solid 3px white;
     border-radius: 10px;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bolder;
+    
 }
 
 
