@@ -2,4 +2,4 @@
 const nombresJugadores = JSON.parse(sessionStorage.getItem("jugadores"));
 
 // //Sobreescribimos el HTML.
-document.getElementById("winner").innerHTML = `Felicidades ${nombresJugadores.player2} has ganado. <a href="../index.html">Pulsa aqui.</a>`
+document.getElementById("winner").innerHTML = `Felicidades ${nombresJugadores.player2} has ganado. -> <a href="../index.html">Pulsa aqui.</a>`
