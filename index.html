@@ -9,24 +9,22 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="containerMaster">
+    <div class="container-fluid containerMaster">
+        <div class="row justify-content-center">
+            <div class="titulo d-flex justify-content-center align-items-center text-center"><h1>FFVII TIC TAC TOE</h1></div>            
+        </div>
         <div class="row">
-            <div class="titulo col-lg-12 d-flex justify-content-center align-items-center"><h1>FFVII TIC TAC TOE</h1></div>            
+            <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="player1 p-2 text-center mb-4"><h3>Introduzca nombre de Player 1</h3></div>
+            <div class="d-flex justify-content-center align-items-center mb-4"><input name="player1" type="text" maxlength="8"></div>
         </div>
-        <div class="row titulo">
-                <div class="player1 col-12 col-lg-6 d-flex justify-content-center align-items-center"><h3>Introduzca nombre de Player 1</h3></div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center"><input name="player1" type="text" maxlength="8"></div>
-                <div class="player2 col-12 col-lg-6 d-flex justify-content-center align-items-center"><h3>Introduzca nombre de Player 2</h3></div>      
-                <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center"><input name="player2" type="text" maxlength="8"></div>      
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="player2 p-2 text-center mb-4"><h3>Introduzca nombre de Player 2</h3></div>      
+                <div class=" d-flex justify-content-center align-items-center mb-3"><input name="player2" type="text" maxlength="8"></div>      
         </div>
-
-        <div class="row">
-            <!-- <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center"><input name="player1" type="text" maxlength="8"></div>
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center"><input name="player2" type="text" maxlength="8"></div> -->
-        </div>
-
-        <div class="row boton">
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+    </div>
+        <div class="row boton justify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-5">
                 <button><a href="./pages/juego.html">Pulsa para jugar</a></button>
             </div>
         </div>
